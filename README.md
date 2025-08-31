@@ -8,10 +8,10 @@ Live site: [https://sai-krishna26.github.io/saikrishna-portfolio-styled](https:/
 
 ## Portfolio Preview
 
-![Home Page](public/screenshots/home.png)
-![Projects Page](public/screenshots/projects.png)
-![Skills Section](public/screenshots/skills.png)
-![Contact Section](public/screenshots/contact.png)
+![Home Page](screenshots/home.png)
+![Projects Page](screenshots/projects.png)
+![Skills Section](screenshots/skills.png)
+![Contact Section](screenshots/contact.png)
 
 ---
 
