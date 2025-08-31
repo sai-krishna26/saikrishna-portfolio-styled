@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/saikrishna-portfolio-styled/static/css/main.42f13d56.css",
-    "main.js": "/saikrishna-portfolio-styled/static/js/main.ef34d6f7.js",
+    "main.js": "/saikrishna-portfolio-styled/static/js/main.be1af784.js",
     "static/media/port profile.jpg": "/saikrishna-portfolio-styled/static/media/port profile.0b0e2cde2c1a33f0545a.jpg",
     "index.html": "/saikrishna-portfolio-styled/index.html",
     "main.42f13d56.css.map": "/saikrishna-portfolio-styled/static/css/main.42f13d56.css.map",
-    "main.ef34d6f7.js.map": "/saikrishna-portfolio-styled/static/js/main.ef34d6f7.js.map"
+    "main.be1af784.js.map": "/saikrishna-portfolio-styled/static/js/main.be1af784.js.map"
   },
   "entrypoints": [
     "static/css/main.42f13d56.css",
-    "static/js/main.ef34d6f7.js"
+    "static/js/main.be1af784.js"
   ]
 }
