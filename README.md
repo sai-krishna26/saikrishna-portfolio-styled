@@ -6,15 +6,6 @@ Live site:http://localhost:3000/saikrishna-portfolio-styled
 
 ---
 
-## Portfolio Preview
-
-![Home Page](screenshots/home.png)
-![Projects Page](screenshots/projects.png)
-![Skills Section](screenshots/skills.png)
-![Contact Section](screenshots/contact.png)
-
----
-
 ## About Me
 
 Hi! I’m **Saikrishna Badiger**, a Computer Science student from Adichunchanagiri Institute of Technology (2022–2026).  
