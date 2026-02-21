@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio! This repository hosts my **React-based portfolio website**, showcasing my projects, skills, and achievements.  
 
-Live site: [https://sai-krishna26.github.io/saikrishna-portfolio-styled]http://localhost:3000/saikrishna-portfolio-styled
+Live site:http://localhost:3000/saikrishna-portfolio-styled
 
 ---
 
