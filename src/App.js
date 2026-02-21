@@ -75,19 +75,23 @@ const App = () => {
     
     // Portfolio-specific queries
     if (lowerQuery.includes('skill') || lowerQuery.includes('technology') || lowerQuery.includes('programming')) {
-      return "Saikrishna has strong skills in Java, Python, C++, HTML/CSS/JavaScript, MySQL, OpenStack, GCP, GitHub, Linux, and VS Code. He's particularly interested in Cloud, DevOps, and Machine Learning! 🚀";
+      return "Saikrishna has strong skills in Core Java, Python, C, OOP concepts, Collections Framework, HTML/CSS/JavaScript, Django, Flask, React, MySQL, MongoDB, Git, GitHub, and AWS basics. He's particularly interested in Full-Stack Development, Machine Learning, and Cloud Computing! 🚀";
     }
     
     if (lowerQuery.includes('project') || lowerQuery.includes('work')) {
-      return "Saikrishna has worked on several exciting projects: 1) 🧠 Brain Tumor Classification using ResNet50 (in progress), 2) 🏡 Homestay Management System (completed), and 3) 📚 Quiz Web Application with Django (completed). All projects are available on his GitHub!";
+      return "Saikrishna has worked on several exciting projects: 1) 🤖 AI-Powered Resume Screening System (Flask, MongoDB, React, NLP), 2) 🧠 Abnormal Brain Tumor Classification using ResNet50 (Python, TensorFlow), and 3) 🏡 Homestay Management System (HTML, CSS, JavaScript, MySQL). All projects are available on his GitHub!";
     }
     
-    if (lowerQuery.includes('experience') || lowerQuery.includes('background')) {
-      return "Saikrishna is a passionate Computer Science student (2022-2026) at Adichunchanagiri Institute of Technology. He has experience in hackathons, IEEE conference volunteering, and has earned certifications in Java, Machine Learning, and Frontend Development. Quite impressive, right? 😊";
+    if (lowerQuery.includes('experience') || lowerQuery.includes('internship') || lowerQuery.includes('background')) {
+      return "Saikrishna is currently working as a Java Full Stack Intern at X-workz, Bengaluru (Feb 2026 – Present). He's a Computer Science student (2022-2026) at Adichunchanagiri Institute of Technology with CGPA 8.44. He has experience coordinating HACKABHiGNA 2025 hackathon, volunteering at IEEE conferences, and has earned certifications in Java (Elite), Big Data Computing (Elite with Silver), Machine Learning, and Frontend Development. Quite impressive, right? 😊";
     }
     
-    if (lowerQuery.includes('contact') || lowerQuery.includes('email') || lowerQuery.includes('linkedin')) {
-      return "You can contact Saikrishna at vishwakarmasaikrishna@gmail.com, connect on LinkedIn (linkedin.com/in/saikrishna-badiger-063a9a314), or check out his GitHub (github.com/sai-krishna26). He's always open to opportunities and meaningful conversations! 📧";
+    if (lowerQuery.includes('publication') || lowerQuery.includes('research') || lowerQuery.includes('paper')) {
+      return "Saikrishna published a research paper titled 'Automated Abnormal Brain Tumor Diagnosis Leveraging ResNet50 Deep Convolutional Architecture' in IEEE 4th International Conference for Advancement in Technology (ICONAT 2025). It's available on IEEE Xplore! 📝";
+    }
+    
+    if (lowerQuery.includes('contact') || lowerQuery.includes('email') || lowerQuery.includes('linkedin') || lowerQuery.includes('phone')) {
+      return "You can contact Saikrishna at vishwakarmasaikrishna@gmail.com or +91-6363326263. Connect on LinkedIn (linkedin.com/in/saikrishna-badiger-063a9a314) or check out his GitHub (github.com/sai-krishna26). He's always open to opportunities and meaningful conversations! 📧";
     }
     
     if (lowerQuery.includes('resume') || lowerQuery.includes('cv')) {
@@ -171,7 +175,7 @@ const App = () => {
 
             {/* Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
-              {['Bio', 'About', 'Skills', 'Projects', 'Certifications', 'Contact', 'Achievements'].map((section, index) => (
+              {['Bio', 'About', 'Skills', 'Experience', 'Projects', 'Publication', 'Certifications', 'Contact', 'Achievements'].map((section, index) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(index)}
@@ -199,7 +203,7 @@ const App = () => {
       <div className="fixed top-16 left-0 right-0 z-40 bg-black/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex space-x-1 py-2">
-            {['Bio', 'About', 'Skills', 'Projects', 'Certifications', 'Contact', 'Achievements'].map((section, index) => (
+            {['Bio', 'About', 'Skills', 'Experience', 'Projects', 'Publication', 'Certifications', 'Contact', 'Achievements'].map((section, index) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(index)}
@@ -246,7 +250,10 @@ const App = () => {
             "Turning data into decisions | Code into creations"
           </p>
                 <p className="text-xl sm:text-2xl text-gray-200 font-medium">
-                  Aspiring Data Analyst | Cloud | DevOps | Web
+                  Java Full Stack Developer | Machine Learning | Web Development
+                </p>
+                <p className="text-lg text-gray-300">
+                  B.E. Computer Science | CGPA: 8.44 (7th Semester)
                 </p>
               </div>
 
@@ -295,7 +302,7 @@ const App = () => {
 
                 <div className="flex flex-wrap gap-4">
                   <a
-                    href={`${process.env.PUBLIC_URL}/SKB resume.pdf`}
+                    href={`${process.env.PUBLIC_URL}/Jdeveloper_Resume.pdf`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-yellow-500 hover:to-amber-700 text-black font-bold px-6 py-3 rounded-xl shadow-lg hover:shadow-yellow-400/70 transition-all duration-300 transform hover:scale-105 text-base"
@@ -303,7 +310,7 @@ const App = () => {
                     👁️ View Resume
                   </a>
           <a
-            href={`${process.env.PUBLIC_URL}/SKB resume.pdf`}
+            href={`${process.env.PUBLIC_URL}/Jdeveloper_Resume.pdf`}
             download
                     className="inline-block bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-yellow-500 hover:to-amber-700 text-black font-bold px-6 py-3 rounded-xl shadow-lg hover:shadow-yellow-400/70 transition-all duration-300 transform hover:scale-105 text-base"
           >
@@ -321,19 +328,19 @@ const App = () => {
             <h2 className="text-3xl font-semibold border-b border-yellow-400 pb-2 mb-6 bg-gradient-to-r from-yellow-400 to-amber-600 bg-clip-text text-transparent">About Me</h2>
       
             <p className="text-gray-200 leading-relaxed text-sm sm:text-base">
-              I'm a passionate Computer Science student (2022–2026) at Adichunchanagiri Institute of Technology with strong foundations in Java, Python, Data Structures, and Web Development.
+              Computer Science undergraduate with strong foundation in Core Java, Object-Oriented Programming, and Data Structures. Experienced in backend application development with database integration and REST-based systems.
             </p>
       
             <p className="text-gray-200 leading-relaxed text-sm sm:text-base">
-              I enjoy building real-world software, solving complex problems, and constantly learning new tools — especially in the fields of <span className="text-yellow-400 font-medium">Cloud</span>, <span className="text-yellow-400 font-medium">DevOps</span>, and <span className="text-yellow-400 font-medium">Machine Learning</span>.
+              Passionate about building scalable software solutions and writing clean, efficient code. Currently working as a <span className="text-yellow-400 font-medium">Java Full Stack Intern</span> at X-workz, Bengaluru, gaining hands-on experience in full-stack development.
             </p>
       
             <p className="text-gray-200 leading-relaxed text-sm sm:text-base">
-              I'm seeking exciting opportunities where I can grow as a <span className="text-yellow-400 font-medium">Data Analyst or Software Developer</span>, contribute to impactful projects, and collaborate in dynamic teams.
+              I enjoy building real-world software, solving complex problems, and constantly learning new technologies — especially in the fields of <span className="text-yellow-400 font-medium">Full-Stack Development</span>, <span className="text-yellow-400 font-medium">Machine Learning</span>, and <span className="text-yellow-400 font-medium">Cloud Computing</span>.
             </p>
 
             <p className="text-yellow-400 italic text-sm sm:text-base">
-            What sets me apart is my curiosity-driven learning and hands-on experience building end-to-end projects.
+            What sets me apart is my curiosity-driven learning, hands-on experience building end-to-end projects, and passion for creating impactful software solutions.
           </p>
           </div>
         </section>
@@ -348,13 +355,15 @@ const App = () => {
     <div className="mb-8">
               <h3 className="text-xl text-yellow-400 mb-4">Technical Skills</h3>
               <ul className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-gray-200 text-sm sm:text-base">
-                <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">Java, Python, C++, C</li>
-                <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">DSA</li>
+                <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">Core Java, Python, C</li>
+                <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">OOP, Collections Framework</li>
+                <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">Exception Handling, Multithreading</li>
                 <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">HTML, CSS, JavaScript</li>
-                <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">MySQL</li>
-                <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">OpenStack, GCP</li>
-                <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">GitHub, Linux</li>
-                <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">VS Code, LaTeX</li>
+                <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">Django, Flask, React</li>
+                <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">MySQL, MongoDB</li>
+                <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">Git, GitHub</li>
+                <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">AWS (basics)</li>
+                <li className="bg-neutral-900 p-3 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">DSA, DBMS, OS</li>
       </ul>
     </div>
 
@@ -373,6 +382,23 @@ const App = () => {
   </div>
 </section>
 
+        {/* 🔹 Experience Slide */}
+        <section className="min-w-full h-full snap-start flex justify-center items-center p-10 bg-black">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-semibold bg-gradient-to-r from-yellow-400 to-amber-600 bg-clip-text text-transparent mb-6">Internship Experience</h2>
+            <div className="bg-neutral-900 p-6 rounded-xl border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">
+              <h3 className="text-xl font-bold text-yellow-400 mb-2">Java Full Stack Intern</h3>
+              <p className="text-gray-300 mb-2 font-medium">X-workz, Bengaluru</p>
+              <p className="text-sm text-yellow-400 mb-4">Feb 2026 – Present</p>
+              <ul className="list-disc ml-5 text-gray-200 space-y-2 text-sm sm:text-base">
+                <li>Currently undergoing project-based training focused on Core Java and full-stack development.</li>
+                <li>Working on implementing OOP concepts including classes, methods, constructors, and encapsulation.</li>
+                <li>Developing structured Java programs involving control flow, arrays, and method interactions.</li>
+                <li>Gaining hands-on exposure to real-time coding practices and debugging techniques.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
         {/* 🔹 Projects Slide */}
         <section className="min-w-full h-full snap-start flex justify-center items-center p-10 bg-black">
@@ -380,26 +406,48 @@ const App = () => {
             <h2 className="text-3xl font-semibold bg-gradient-to-r from-yellow-400 to-amber-600 bg-clip-text text-transparent mb-6">Projects</h2>
             <div className="space-y-6">
               <div className="bg-neutral-900 p-6 rounded-xl border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">
-                <h3 className="text-xl font-bold text-yellow-400 mb-2">🧠 Brain Tumor Classification</h3>
-                <p className="text-gray-200 mb-2">ResNet50-based classification of MRI images.</p>
-                <p className="text-sm text-yellow-400 mb-2">Python, TensorFlow, OpenCV</p>
+                <h3 className="text-xl font-bold text-yellow-400 mb-2">🤖 AI-Powered Resume Screening System</h3>
+                <p className="text-gray-200 mb-2">Developed a full-stack application to automate resume evaluation and candidate ranking. Implemented backend APIs for text processing and similarity scoring using TF-IDF and cosine similarity. Designed MongoDB schemas and performed CRUD operations for candidate data management.</p>
+                <p className="text-sm text-yellow-400 mb-2">Flask, MongoDB, React, NLP</p>
                 <a href="https://github.com/sai-krishna26" target="_blank" rel="noreferrer" className="text-amber-500 underline text-sm hover:text-amber-400 transition-colors">GitHub</a>
-                <p className="text-sm text-yellow-400 mt-2">📌 Status: In Progress</p>
+                <p className="text-sm text-green-400 mt-2">📌 Status: Completed</p>
+            </div>
+
+              <div className="bg-neutral-900 p-6 rounded-xl border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">
+                <h3 className="text-xl font-bold text-yellow-400 mb-2">🧠 Abnormal Brain Tumor Classification Using ResNet50</h3>
+                <p className="text-gray-200 mb-2">Built deep learning model using ResNet50 on 1,304 MRI images for multi-class tumor classification. Implemented preprocessing, training, and evaluation using precision, recall, and F1-score metrics.</p>
+                <p className="text-sm text-yellow-400 mb-2">Python, TensorFlow</p>
+                <a href="https://github.com/sai-krishna26" target="_blank" rel="noreferrer" className="text-amber-500 underline text-sm hover:text-amber-400 transition-colors">GitHub</a>
+                <p className="text-sm text-green-400 mt-2">📌 Status: Completed</p>
             </div>
 
               <div className="bg-neutral-900 p-6 rounded-xl border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">
                 <h3 className="text-xl font-bold text-yellow-400 mb-2">🏡 Homestay Management System</h3>
-                <p className="text-gray-200 mb-2">Eco-friendly homestay booking system.</p>
-                <p className="text-sm text-yellow-400 mb-2">HTML, CSS, JS, MySQL (XAMPP)</p>
-                <p className="text-sm text-green-400 mt-2">📌 Status: Completed</p>
-            </div>
-
-              <div className="bg-neutral-900 p-6 rounded-xl border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">
-                <h3 className="text-xl font-bold text-yellow-400 mb-2">📚 Quiz Web Application</h3>
-                <p className="text-gray-200 mb-2">Quiz platform with learning and part-time job features.</p>
-                <p className="text-sm text-yellow-400 mb-2">HTML, CSS, JavaScript, Python (Django)</p>
+                <p className="text-gray-200 mb-2">Developed booking system with user registration and admin management modules. Designed relational database schema and implemented SQL queries for data handling.</p>
+                <p className="text-sm text-yellow-400 mb-2">HTML, CSS, JavaScript, MySQL</p>
                 <p className="text-sm text-green-400 mt-2">📌 Status: Completed</p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 🔹 Publication Slide */}
+        <section className="min-w-full h-full snap-start flex justify-center items-center p-10 bg-black">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-semibold bg-gradient-to-r from-yellow-400 to-amber-600 bg-clip-text text-transparent mb-6">Publication</h2>
+            <div className="bg-neutral-900 p-6 rounded-xl border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">
+              <h3 className="text-xl font-bold text-yellow-400 mb-2">Automated Abnormal Brain Tumor Diagnosis Leveraging ResNet50 Deep Convolutional Architecture</h3>
+              <p className="text-gray-300 mb-2"><strong className="text-yellow-400">Author:</strong> Saikrishna Badiger</p>
+              <p className="text-gray-200 mb-4">Published in <strong className="text-yellow-400">IEEE 4th International Conference for Advancement in Technology (ICONAT 2025)</strong>.</p>
+              <p className="text-sm text-gray-400 mb-4">Available on IEEE Xplore</p>
+              <a 
+                href="https://ieeexplore.ieee.org" 
+                target="_blank" 
+                rel="noreferrer"
+                className="inline-block text-amber-500 underline text-sm hover:text-amber-400 transition-colors"
+              >
+                View Publication →
+              </a>
             </div>
           </div>
         </section>
@@ -409,11 +457,10 @@ const App = () => {
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-semibold bg-gradient-to-r from-yellow-400 to-amber-600 bg-clip-text text-transparent mb-6">Certifications</h2>
             <ul className="list-disc ml-5 mb-6 text-gray-200 space-y-2">
-              <li>Programming in Java Certification by NPTEL - 2025</li>
-              <li>Machine Learning Certification by NPTEL – 2025</li>
-              <li>Frontend Developer Certification – Great Learning – 2024</li>
-              <li>Hackathon Participation – 2024–2025</li>
-              <li>IEEE Conference Volunteer Certificate – 2024</li>
+              <li>NPTEL – Programming in Java (Elite)</li>
+              <li>NPTEL – Big Data Computing (Elite with Silver)</li>
+              <li>NPTEL – Machine Learning</li>
+              <li>Front-End Development – Great Learning</li>
             </ul>
             <button
               onClick={() => setShowCerts(!showCerts)}
@@ -466,6 +513,16 @@ const App = () => {
       </p>
 
       <p className="text-gray-200">
+        📱 Phone:{" "}
+        <a
+          href="tel:+916363326263"
+          className="text-yellow-400 hover:text-amber-500 transition-colors duration-300 underline"
+        >
+          +91-6363326263
+        </a>
+      </p>
+
+      <p className="text-gray-200">
         🔗 GitHub:{" "}
         <a
           className="text-yellow-400 hover:text-amber-500 transition-colors duration-300 underline"
@@ -495,19 +552,25 @@ const App = () => {
             <h2 className="text-3xl font-semibold bg-gradient-to-r from-yellow-400 to-amber-600 bg-clip-text text-transparent mb-8">Achievements</h2>
             <ul className="list-disc text-left text-gray-200 space-y-4 px-6 sm:px-10 text-sm sm:text-base">
               <li className="bg-neutral-900 p-4 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">
-                🏆 Successfully built and presented a deep learning project on <strong className="text-yellow-400">Brain Tumor Classification using ResNet50</strong> as part of final year academic work.
+                📝 Published research paper: <strong className="text-yellow-400">"Automated Abnormal Brain Tumor Diagnosis Leveraging ResNet50 Deep Convolutional Architecture"</strong> in IEEE 4th International Conference for Advancement in Technology (ICONAT 2025), available on IEEE Xplore.
             </li>
               <li className="bg-neutral-900 p-4 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">
-                🧠 Participated in inter-college <strong className="text-yellow-400">Hackathons</strong> and contributed to innovative project ideas and team collaboration.
+                🎯 Currently working as <strong className="text-yellow-400">Java Full Stack Intern</strong> at X-workz, Bengaluru (Feb 2026 – Present), gaining hands-on experience in Core Java and full-stack development.
             </li>
               <li className="bg-neutral-900 p-4 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">
-                🤝 Volunteered at <strong className="text-yellow-400">IEEE International Conference 2024</strong>, assisting with event coordination and tech support.
+                🏆 Coordinator – <strong className="text-yellow-400">HACKABHiGNA 2025</strong> (National Hackathon organized by Dept. of CSE, AIT).
             </li>
               <li className="bg-neutral-900 p-4 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">
-                📜 Earned certifications in <strong className="text-yellow-400">Java, Machine Learning, and Frontend Development</strong> from NPTEL and Great Learning.
+                🤝 Conference Volunteer – <strong className="text-yellow-400">IEEE International Conference 2025</strong>, assisting with event coordination and tech support.
             </li>
               <li className="bg-neutral-900 p-4 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">
-                🌐 Developed and deployed a <strong className="text-yellow-400">portfolio website</strong> showcasing skills, projects, and certifications using React and GitHub Pages.
+                🧠 Participated in <strong className="text-yellow-400">3 Hackathons</strong> and contributed to innovative project ideas and team collaboration.
+            </li>
+              <li className="bg-neutral-900 p-4 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">
+                📜 Earned certifications in <strong className="text-yellow-400">Java (Elite), Big Data Computing (Elite with Silver), Machine Learning, and Frontend Development</strong> from NPTEL and Great Learning.
+            </li>
+              <li className="bg-neutral-900 p-4 rounded-lg border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 hover:shadow-amber-500/40">
+                🎓 Maintaining <strong className="text-yellow-400">CGPA: 8.44</strong> (7th semester) in B.E. Computer Science and Engineering.
             </li>
           </ul>
           </div>
@@ -540,8 +603,8 @@ const App = () => {
           ←
         </button>
         <button
-          onClick={() => scrollToSection(Math.min(6, currentSection + 1))}
-          disabled={currentSection === 6}
+          onClick={() => scrollToSection(Math.min(8, currentSection + 1))}
+          disabled={currentSection === 8}
           className="bg-gradient-to-r from-yellow-400 to-amber-600 hover:from-yellow-500 hover:to-amber-700 disabled:from-gray-500 disabled:to-gray-600 text-black w-12 h-12 rounded-full shadow-lg hover:shadow-yellow-400/70 flex items-center justify-center transition-all duration-300 hover:scale-110 disabled:cursor-not-allowed disabled:scale-100"
           title="Next Section"
         >
@@ -582,7 +645,7 @@ const App = () => {
             </div>
             
             <div className="space-y-3">
-              {['Bio', 'About', 'Skills', 'Projects', 'Certifications', 'Contact', 'Achievements'].map((section, index) => (
+              {['Bio', 'About', 'Skills', 'Experience', 'Projects', 'Publication', 'Certifications', 'Contact', 'Achievements'].map((section, index) => (
                 <button
                   key={section}
                   onClick={() => {
